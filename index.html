@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products for Sale</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Stripe Buy Button JavaScript - only needs to be included once -->
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Using Inter font as the default */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8">
+
+    <!-- Main container for the content -->
+    <div class="w-full max-w-md bg-white rounded-2xl shadow-lg p-8 space-y-6">
+        
+        <!-- Header Section -->
+        <div class="text-center">
+            <h1 class="text-3xl font-bold text-gray-800">Our Products</h1>
+            <p class="text-gray-500 mt-2">Select an option below to complete your purchase securely with Stripe.</p>
+        </div>
+
+        <!-- Stripe Buttons Container -->
+        <div class="space-y-4 flex flex-col items-center">
+
+            <!-- Stripe Button 1 -->
+            <stripe-buy-button
+              buy-button-id="buy_btn_1RwKpDGUhL3fq5rViHZeYzTG"
+              publishable-key="pk_live_51Rw7ToGUhL3fq5rVqeVTHo3pBnmWkJ7T1BpGzL34lwCwgwBbwiHKqoytGob2gHKyBaD7n0ybVKjF8c1RXqZuSInA00Zr6WqqvT"
+            >
+            </stripe-buy-button>
+
+            <!-- Stripe Button 2 -->
+            <stripe-buy-button
+              buy-button-id="buy_btn_1RwKqkGUhL3fq5rVOCfGCHcb"
+              publishable-key="pk_live_51Rw7ToGUhL3fq5rVqeVTHo3pBnmWkJ7T1BpGzL34lwCwgwBbwiHKqoytGob2gHKyBaD7n0ybVKjF8c1RXqZuSInA00Zr6WqqvT"
+            >
+            </stripe-buy-button>
+
+            <!-- Stripe Button 3 -->
+            <stripe-buy-button
+              buy-button-id="buy_btn_1RwKJOGUhL3fq5rVdmZDdqEC"
+              publishable-key="pk_live_51Rw7ToGUhL3fq5rVqeVTHo3pBnmWkJ7T1BpGzL34lwCwgwBbwiHKqoytGob2gHKyBaD7n0ybVKjF8c1RXqZuSInA00Zr6WqqvT"
+            >
+            </stripe-buy-button>
+
+            <!-- Stripe Button 4 -->
+            <stripe-buy-button
+              buy-button-id="buy_btn_1RwKrhGUhL3fq5rVFBlAhw5J"
+              publishable-key="pk_live_51Rw7ToGUhL3fq5rVqeVTHo3pBnmWkJ7T1BpGzL34lwCwgwBbwiHKqoytGob2gHKyBaD7n0ybVKjF8c1RXqZuSInA00Zr6WqqvT"
+            >
+            </stripe-buy-button>
+
+        </div>
+        
+        <!-- Footer Section -->
+        <div class="text-center text-xs text-gray-400 pt-4">
+            <p>All transactions are secure and encrypted.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
